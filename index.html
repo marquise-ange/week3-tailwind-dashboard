@@ -3,9 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>MediFind Dashboard</title>
 </head>
-<body>
-    
+<body class="min-h-screen bg-slate-50">
+
+    <!-- Desktop Sidebar -->
+    <aside class="hidden lg:block w-64 min-h-screen bg-brand-900 text-white p-6">
+        <h1 class="text-2xl font-bold mb-8">MediFind</h1>
+
+        <nav aria-label="Main navigation">
+            <ul class="space-y-3">
+                <li>
+                    <a href="#dashboard" class="nav-link">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#jobs" class="nav-link">Find Jobs</a>
+                </li>
+                <li>
+                    <a href="#applications" class="nav-link">Applications</a>
+                </li>
+                <li>
+                    <a href="#employers" class="nav-link">Employers</a>
+                </li>
+                <li>
+                    <a href="#profile" class="nav-link">My Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Mobile Navigation -->
+    <details class="lg:hidden relative p-4">
+        <summary
+            class="inline-block cursor-pointer rounded-lg bg-brand-600 px-4 py-2 text-white transition hover:bg-brand-700 focus:outline-2 focus:outline-offset-2 focus:outline-brand-600">
+            Menu
+        </summary>
+
+        <nav aria-label="Mobile navigation" class="mt-3 rounded-xl bg-brand-900 p-4">
+            <ul class="space-y-2">
+                <li>
+                    <a href="#dashboard" class="nav-link">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#jobs" class="nav-link">Find Jobs</a>
+                </li>
+                <li>
+                    <a href="#applications" class="nav-link">Applications</a>
+                </li>
+                <li>
+                    <a href="#employers" class="nav-link">Employers</a>
+                </li>
+                <li>
+                    <a href="#profile" class="nav-link">My Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </details>
+
+    <!-- Temporary section targets for navigation testing -->
+    <main class="p-6">
+        <section id="dashboard" class="mb-8">
+            <h2 class="text-2xl font-bold text-brand-900">Dashboard</h2>
+        </section>
+
+        <section id="jobs" class="mb-8">
+            <h2 class="text-2xl font-bold text-brand-900">Find Jobs</h2>
+        </section>
+
+        <section id="applications" class="mb-8">
+            <h2 class="text-2xl font-bold text-brand-900">Applications</h2>
+        </section>
+
+        <section id="employers" class="mb-8">
+            <h2 class="text-2xl font-bold text-brand-900">Employers</h2>
+        </section>
+
+        <section id="profile" class="mb-8">
+            <h2 class="text-2xl font-bold text-brand-900">My Profile</h2>
+        </section>
+    </main>
+
 </body>
+
 </html>
