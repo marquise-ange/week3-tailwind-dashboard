@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* MediFind theme */
 @theme {
     --color-brand-50: #eaf8f5;
     --color-brand-100: #c9eee6;
@@ -9,14 +10,25 @@
     --color-brand-900: #123b38;
 
     --color-mint: #a7f3d0;
+
     --font-sans: "Inter", sans-serif;
 }
 
-/* stylelint-enable at-rule-no-unknown */
-
-
+/* Reusable dashboard components */
 @layer components {
+
+    /* Sidebar navigation links */
     .nav-link {
         @apply block rounded-xl px-4 py-3 text-sm font-medium text-white transition hover:bg-brand-700 focus:outline-2 focus:outline-offset-2 focus:outline-white;
+    }
+
+    /* Statistics cards */
+    .card {
+        @apply rounded-2xl bg-white p-6 shadow-sm ring-1 ring-slate-200 transition hover:shadow-md;
+    }
+
+    /* Primary action buttons */
+    .btn-primary {
+        @apply inline-flex items-center justify-center rounded-xl bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-700 focus:outline-2 focus:outline-offset-2 focus:outline-brand-600;
     }
 }
