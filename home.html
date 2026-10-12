@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>MediFind | Home</title>
+</head>
+
+<body class="min-h-screen bg-slate-50 font-sans text-slate-800">
+
+    <!--  NAVIGATION  -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8">
+
+            <!-- Logo -->
+            <a href="home.html" class="flex items-center gap-3">
+                <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-brand-900 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="h-7 w-7">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-6-6h12" />
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 12a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+                    </svg>
+                </div>
+
+                <div>
+                    <span class="block text-2xl font-extrabold tracking-tight text-brand-900">
+                        Medi<span class="text-brand-600">Find</span>
+                    </span>
+                    <span class="hidden text-xs text-slate-500 sm:block">
+                        Your healthcare career starts here
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navigation links -->
+            <div class="flex items-center gap-3 sm:gap-6">
+                <a href="home.html" aria-current="page"
+                    class="border-b-2 border-brand-700 py-2 text-sm font-bold text-brand-900">
+                    Home
+                </a>
+
+                <a href="#jobs"
+                    class="hidden py-2 text-sm font-medium text-slate-600 transition hover:text-brand-700 sm:inline-block">
+                    Find Jobs
+                </a>
+
+                <a href="#employers"
+                    class="hidden py-2 text-sm font-medium text-slate-600 transition hover:text-brand-700 sm:inline-block">
+                    Employers
+                </a>
+
+                <a href="index.html"
+                    class="rounded-xl bg-brand-900 px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-brand-700 sm:px-5">
+                    Dashboard
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--  HERO SECTION  -->
+    <main>
+
+        <section class="relative overflow-hidden bg-brand-900">
+            <!-- Decorative background shapes -->
+            <div class="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full border border-white/10">
+            </div>
+            <div class="pointer-events-none absolute -right-12 -top-12 h-56 w-56 rounded-full border border-white/10">
+            </div>
+            <div class="pointer-events-none absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-white/5"></div>
+
+            <div
+                class="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
+
+                <!-- Hero text -->
+                <div>
+                    <div
+                        class="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-emerald-100">
+                        <span class="h-2 w-2 rounded-full bg-emerald-300"></span>
+                        Connecting healthcare talent with opportunity
+                    </div>
+
+                    <h1
+                        class="max-w-2xl text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+                        Find Your Place in
+                        <span class="text-mint">Healthcare.</span>
+                    </h1>
+
+                    <p class="mt-6 max-w-xl text-base leading-8 text-slate-200 sm:text-lg">
+                        Your next career opportunity starts here. Discover healthcare jobs,
+                        connect with employers, and take the next step toward a career
+                        that makes a difference.
+                    </p>
+
+                    <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+                        <a href="#jobs"
+                            class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-300 px-6 py-3.5 font-bold text-brand-900 shadow-lg transition hover:bg-emerald-200">
+                            Explore Opportunities
+                            <span aria-hidden="true">→</span>
+                        </a>
+
+                        <a href="index.html#profile"
+                            class="inline-flex items-center justify-center rounded-xl border border-white/30 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10">
+                            Complete Your Profile
+                        </a>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-200">
+                        <span class="flex items-center gap-2">
+                            <span class="font-bold text-mint">✓</span>
+                            Healthcare opportunities
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <span class="font-bold text-mint">✓</span>
+                            Employer connections
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Hero search card -->
+                <div class="rounded-3xl border border-white/20 bg-white p-6 shadow-2xl sm:p-8">
+                    <div class="mb-7">
+                        <p class="text-sm font-bold uppercase tracking-widest text-brand-600">
+                            Start your search
+                        </p>
+                        <h2 class="mt-2 text-2xl font-extrabold text-brand-900 sm:text-3xl">
+                            Your next opportunity awaits.
+                        </h2>
+                        <p class="mt-3 leading-7 text-slate-500">
+                            Search for roles that match your healthcare skills and ambitions.
+                        </p>
+                    </div>
+
+                    <form action="#jobs" method="get" class="space-y-5">
+
+                        <div>
+                            <label for="job-title" class="mb-2 block text-sm font-semibold text-slate-700">
+                                Job title or specialty
+                            </label>
+
+                            <div
+                                class="flex items-center gap-3 rounded-xl border border-slate-200 px-4 transition focus-within:border-brand-600 focus-within:ring-2 focus-within:ring-brand-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="h-5 w-5 shrink-0 text-slate-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M21 21l-5.2-5.2m2.2-5.3a7.5 7.5 0 11-15 0 7.5 7.5 0 0115 0z" />
+                                </svg>
+
+                                <input id="job-title" name="title" type="text" placeholder="e.g. Pharmacist, Nurse"
+                                    class="w-full border-0 bg-transparent py-3.5 text-sm text-slate-800 outline-none placeholder:text-slate-400">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="location" class="mb-2 block text-sm font-semibold text-slate-700">
+                                Location
+                            </label>
+
+                            <div
+                                class="flex items-center gap-3 rounded-xl border border-slate-200 px-4 transition focus-within:border-brand-600 focus-within:ring-2 focus-within:ring-brand-100">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.8" stroke="currentColor" class="h-5 w-5 shrink-0 text-slate-400">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 21s7-5.1 7-12a7 7 0 10-14 0c0 6.9 7 12 7 12z" />
+                                    <circle cx="12" cy="9" r="2.5" />
+                                </svg>
+
+                                <input id="location" name="location" type="text" placeholder="e.g. Kigali, Rwanda"
+                                    class="w-full border-0 bg-transparent py-3.5 text-sm text-slate-800 outline-none placeholder:text-slate-400">
+                            </div>
+                        </div>
+
+                        <button type="submit"
+                            class="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-900 px-6 py-4 font-bold text-white transition hover:bg-brand-700">
+                            Search Jobs
+                            <span aria-hidden="true">→</span>
+                        </button>
+                    </form>
+
+                    <p class="mt-4 text-center text-xs leading-5 text-slate-400">
+                        Discover opportunities and manage your applications through your dashboard.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== OVERVIEW CARDS ==================== -->
+        <section class="mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
+
+            <div class="mb-10 text-center">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-600">
+                    Your career, your future
+                </p>
+
+                <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-brand-900 sm:text-4xl">
+                    Everything You Need to Move Forward
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl leading-7 text-slate-500">
+                    Discover opportunities, connect with healthcare employers,
+                    and manage your job search in one place.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+
+                <!-- Explore Jobs -->
+                <a href="#jobs"
+                    class="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-xl">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-50 text-brand-700 transition group-hover:bg-brand-900 group-hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                            stroke="currentColor" class="h-7 w-7">
+                            <circle cx="10.5" cy="10.5" r="6.5" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m15.5 15.5 5 5" />
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-6 text-xl font-bold text-brand-900">
+                        Explore Healthcare Jobs
+                    </h3>
+
+                    <p class="mt-3 leading-7 text-slate-500">
+                        Find opportunities that match your skills, experience,
+                        and career goals in the healthcare sector.
+                    </p>
+
+                    <div class="mt-6 flex items-center gap-2 font-semibold text-brand-700">
+                        Browse opportunities
+                        <span class="transition group-hover:translate-x-1">→</span>
+                    </div>
+                </a>
+
+
+                <!-- Meet Employers -->
+                <a href="#employers"
+                    class="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-xl">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-700 transition group-hover:bg-brand-900 group-hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                            stroke="currentColor" class="h-7 w-7">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 21h18M5 21V7l7-4 7 4v14M9 10h.01M9 14h.01M9 18h.01M15 10h.01M15 14h.01M15 18h.01M10 21v-5h4v5" />
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-6 text-xl font-bold text-brand-900">
+                        Meet Healthcare Employers
+                    </h3>
+
+                    <p class="mt-3 leading-7 text-slate-500">
+                        Discover healthcare organizations and explore the
+                        teams where your skills can make a difference.
+                    </p>
+
+                    <div class="mt-6 flex items-center gap-2 font-semibold text-brand-700">
+                        Discover employers
+                        <span class="transition group-hover:translate-x-1">→</span>
+                    </div>
+                </a>
+
+
+                <!-- Manage Profile -->
+                <a href="index.html#profile"
+                    class="group rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-xl">
+
+                    <div
+                        class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50 text-amber-700 transition group-hover:bg-brand-900 group-hover:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8"
+                            stroke="currentColor" class="h-7 w-7">
+                            <circle cx="12" cy="8" r="4" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 21a8 8 0 0116 0" />
+                        </svg>
+                    </div>
+
+                    <h3 class="mt-6 text-xl font-bold text-brand-900">
+                        Build Your Profile
+                    </h3>
+
+                    <p class="mt-3 leading-7 text-slate-500">
+                        Present your qualifications and experience clearly
+                        so employers can learn more about you.
+                    </p>
+
+                    <div class="mt-6 flex items-center gap-2 font-semibold text-brand-700">
+                        Complete your profile
+                        <span class="transition group-hover:translate-x-1">→</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== FEATURED JOBS ==================== -->
+        <section id="jobs" class="scroll-mt-24 bg-slate-100/80 py-16 sm:py-20">
+
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+                <div class="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-600">
+                            Find your next opportunity
+                        </p>
+
+                        <h2 class="mt-3 text-3xl font-extrabold text-brand-900 sm:text-4xl">
+                            Featured Healthcare Jobs
+                        </h2>
+
+                        <p class="mt-3 max-w-2xl leading-7 text-slate-500">
+                            Explore healthcare roles and discover where your career can take you.
+                        </p>
+                    </div>
+
+                    <a href="index.html#jobs"
+                        class="inline-flex items-center gap-2 font-bold text-brand-700 transition hover:text-brand-900">
+                        View all jobs <span>→</span>
+                    </a>
+                </div>
+
+
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                    <!-- Job Card 1 -->
+                    <article
+                        class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <div
+                                class="flex h-14 w-14 items-center justify-center rounded-xl bg-brand-50 text-lg font-extrabold text-brand-900">
+                                KM
+                            </div>
+
+                            <span class="rounded-full bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-700">
+                                Pending
+                            </span>
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold text-brand-900">
+                            Pharmacist
+                        </h3>
+
+                        <p class="mt-1 font-medium text-slate-600">
+                            Kigali Medical Center
+                        </p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600">
+                                Full-time
+                            </span>
+
+                            <span class="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600">
+                                Kigali, Rwanda
+                            </span>
+                        </div>
+
+                        <p class="mt-4 flex-1 text-sm leading-7 text-slate-500">
+                            Support patient care through safe medication management
+                            and professional pharmacy services.
+                        </p>
+
+                        <div class="mt-6 border-t border-slate-100 pt-5">
+                            <a href="index.html#jobs"
+                                class="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-900 px-5 py-3 font-semibold text-white transition hover:bg-brand-700">
+                                View Opportunity <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Job Card 2 -->
+                    <article
+                        class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <div
+                                class="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald-50 text-lg font-extrabold text-emerald-800">
+                                HP
+                            </div>
+
+                            <span class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-bold text-blue-700">
+                                Reviewed
+                            </span>
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold text-brand-900">
+                            Pharmacy Assistant
+                        </h3>
+
+                        <p class="mt-1 font-medium text-slate-600">
+                            HealthPlus Pharmacy
+                        </p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600">
+                                Full-time
+                            </span>
+
+                            <span class="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600">
+                                Kigali, Rwanda
+                            </span>
+                        </div>
+
+                        <p class="mt-4 flex-1 text-sm leading-7 text-slate-500">
+                            Assist with daily pharmacy operations, customer support,
+                            and accurate medication handling.
+                        </p>
+
+                        <div class="mt-6 border-t border-slate-100 pt-5">
+                            <a href="index.html#jobs"
+                                class="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-900 px-5 py-3 font-semibold text-white transition hover:bg-brand-700">
+                                View Opportunity <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+
+                    <!-- Job Card 3 -->
+                    <article
+                        class="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg">
+
+                        <div class="flex items-start justify-between gap-3">
+                            <div
+                                class="flex h-14 w-14 items-center justify-center rounded-xl bg-teal-50 text-lg font-extrabold text-teal-800">
+                                KF
+                            </div>
+
+                            <span class="rounded-full bg-violet-50 px-3 py-1.5 text-xs font-bold text-violet-700">
+                                Interview
+                            </span>
+                        </div>
+
+                        <h3 class="mt-5 text-xl font-bold text-brand-900">
+                            Clinical Pharmacist
+                        </h3>
+
+                        <p class="mt-1 font-medium text-slate-600">
+                            King Faisal Hospital
+                        </p>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600">
+                                Full-time
+                            </span>
+
+                            <span class="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600">
+                                Kigali, Rwanda
+                            </span>
+                        </div>
+
+                        <p class="mt-4 flex-1 text-sm leading-7 text-slate-500">
+                            Collaborate with clinical teams to support treatment
+                            plans and improve medication safety.
+                        </p>
+
+                        <div class="mt-6 border-t border-slate-100 pt-5">
+                            <a href="index.html#jobs"
+                                class="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-900 px-5 py-3 font-semibold text-white transition hover:bg-brand-700">
+                                View Opportunity <span>→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ==================== FEATURED EMPLOYERS ==================== -->
+        <section id="employers" class="scroll-mt-24 mx-auto max-w-7xl px-6 py-16 sm:py-20 lg:px-8">
+
+            <div class="mb-10 text-center">
+                <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-600">
+                    Build meaningful connections
+                </p>
+
+                <h2 class="mt-3 text-3xl font-extrabold text-brand-900 sm:text-4xl">
+                    Meet Healthcare Employers
+                </h2>
+
+                <p class="mx-auto mt-4 max-w-2xl leading-7 text-slate-500">
+                    Discover healthcare organizations and explore opportunities
+                    to grow your professional career.
+                </p>
+            </div>
+
+
+            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Employer Card 1 -->
+                <article
+                    class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg">
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-brand-50 text-xl font-extrabold text-brand-900">
+                            KM
+                        </div>
+
+                        <div class="min-w-0">
+                            <h3 class="text-lg font-bold text-brand-900">
+                                Kigali Medical Center
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">
+                                Healthcare provider
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-5 text-sm leading-7 text-slate-500">
+                        Explore healthcare career opportunities and discover
+                        a team focused on patient care.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between gap-3 border-t border-slate-100 pt-4">
+                        <span class="text-sm font-medium text-slate-500">
+                            Kigali, Rwanda
+                        </span>
+
+                        <a href="index.html#jobs"
+                            class="shrink-0 font-semibold text-brand-700 transition hover:text-brand-900">
+                            Explore jobs →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Employer Card 2 -->
+                <article
+                    class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg">
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-emerald-50 text-xl font-extrabold text-emerald-800">
+                            HP
+                        </div>
+
+                        <div class="min-w-0">
+                            <h3 class="text-lg font-bold text-brand-900">
+                                HealthPlus Pharmacy
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">
+                                Pharmacy services
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-5 text-sm leading-7 text-slate-500">
+                        Discover pharmacy roles and opportunities to contribute
+                        to quality medication services.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between gap-3 border-t border-slate-100 pt-4">
+                        <span class="text-sm font-medium text-slate-500">
+                            Kigali, Rwanda
+                        </span>
+
+                        <a href="index.html#jobs"
+                            class="shrink-0 font-semibold text-brand-700 transition hover:text-brand-900">
+                            Explore jobs →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Employer Card 3 -->
+                <article
+                    class="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-teal-200 hover:shadow-lg">
+
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-teal-50 text-xl font-extrabold text-teal-800">
+                            KF
+                        </div>
+
+                        <div class="min-w-0">
+                            <h3 class="text-lg font-bold text-brand-900">
+                                King Faisal Hospital
+                            </h3>
+                            <p class="mt-1 text-sm text-slate-500">
+                                Hospital and clinical care
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="mt-5 text-sm leading-7 text-slate-500">
+                        Explore clinical career paths and opportunities
+                        to work with healthcare professionals.
+                    </p>
+
+                    <div class="mt-5 flex items-center justify-between gap-3 border-t border-slate-100 pt-4">
+                        <span class="text-sm font-medium text-slate-500">
+                            Kigali, Rwanda
+                        </span>
+
+                        <a href="index.html#jobs"
+                            class="shrink-0 font-semibold text-brand-700 transition hover:text-brand-900">
+                            Explore jobs →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- ==================== CALL TO ACTION ==================== -->
+        <section class="px-6 pb-16 sm:pb-20 lg:px-8">
+            <div
+                class="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-brand-900 px-6 py-12 text-center sm:px-12 sm:py-16">
+
+                <div
+                    class="pointer-events-none absolute -right-16 -top-20 h-56 w-56 rounded-full border border-white/10">
+                </div>
+                <div class="pointer-events-none absolute -bottom-24 -left-12 h-56 w-56 rounded-full bg-white/5"></div>
+
+                <div class="relative">
+                    <p class="text-sm font-bold uppercase tracking-[0.2em] text-mint">
+                        Your next chapter starts here
+                    </p>
+
+                    <h2 class="mx-auto mt-4 max-w-3xl text-3xl font-extrabold leading-tight text-white sm:text-4xl">
+                        Ready for Your Next Healthcare Opportunity?
+                    </h2>
+
+                    <p class="mx-auto mt-4 max-w-2xl leading-7 text-slate-200">
+                        Take control of your job search, keep track of your applications,
+                        and move closer to your professional goals.
+                    </p>
+
+                    <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+                        <a href="index.html"
+                            class="inline-flex items-center justify-center gap-2 rounded-xl bg-emerald-300 px-7 py-3.5 font-bold text-brand-900 transition hover:bg-emerald-200">
+                            Go to Dashboard <span>→</span>
+                        </a>
+
+                        <a href="#jobs"
+                            class="inline-flex items-center justify-center rounded-xl border border-white/30 px-7 py-3.5 font-semibold text-white transition hover:bg-white/10">
+                            Explore Jobs
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="border-t border-slate-200 bg-white">
+        <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-6 py-8 sm:flex-row lg:px-8">
+
+            <a href="home.html" class="flex items-center gap-2">
+                <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-900 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="h-5 w-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-6-6h12" />
+                        <circle cx="12" cy="12" r="9" />
+                    </svg>
+                </div>
+
+                <span class="text-lg font-extrabold text-brand-900">
+                    Medi<span class="text-brand-600">Find</span>
+                </span>
+            </a>
+
+            <p class="text-center text-sm text-slate-500">
+                © 2026 MediFind. Connecting healthcare talent with opportunity.
+            </p>
+
+            <a href="index.html" class="text-sm font-semibold text-brand-700 transition hover:text-brand-900">
+                Go to Dashboard →
+            </a>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
