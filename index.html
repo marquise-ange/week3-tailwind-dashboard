@@ -15,12 +15,14 @@
     <div class="min-h-screen lg:flex">
 
         <!-- Desktop Sidebar -->
-        <aside class="hidden w-64 shrink-0 bg-brand-900 p-6 text-white lg:block">
+        <aside class="hidden w-64 shrink-0 bg-brand-900 p-6 text-white lg:flex lg:min-h-screen lg:flex-col">
 
+            <!-- Logo -->
             <a href="home.html" class="mb-10 block text-2xl font-bold tracking-tight">
                 Medi<span class="text-mint">Find</span>
             </a>
 
+            <!-- Workspace Navigation -->
             <p class="mb-3 px-4 text-xs font-semibold uppercase tracking-widest text-slate-300">
                 Workspace
             </p>
@@ -47,23 +49,30 @@
                 </ul>
             </nav>
 
-            <!-- Sidebar Message -->
-            <div class="mt-12 rounded-2xl bg-brand-700 p-4">
-                <p class="font-semibold text-white">Keep moving forward!</p>
-                <p class="mt-2 text-sm leading-6 text-slate-200">
-                    Every application is a step closer to your next opportunity.
-                </p>
+            <!-- Bottom Sidebar Section -->
+            <div class="mt-auto pt-8">
+
+                <!-- Sidebar Message -->
+                <div class="rounded-2xl bg-brand-700 p-4">
+                    <p class="font-semibold text-white">
+                        Keep moving forward!
+                    </p>
+
+                    <p class="mt-2 text-sm leading-6 text-slate-200">
+                        Every application is a step closer to your next opportunity.
+                    </p>
+                </div>
+
+                <!-- Sidebar Back to Home -->
+                <a href="home.html"
+                    class="mt-6 flex items-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
+                    <span aria-hidden="true">←</span>
+                    Back to Home
+                </a>
+
             </div>
 
-            <!-- Sidebar Back to Home -->
-            <a href="home.html"
-                class="mt-6 flex items-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-sm font-semibold text-white transition hover:bg-white/10">
-                <span aria-hidden="true">←</span>
-                Back to Home
-            </a>
-
         </aside>
-
 
         <!-- Main Content -->
         <main class="min-w-0 flex-1 p-4 sm:p-6 lg:p-8">
@@ -96,21 +105,18 @@
                     <input id="job-search" type="search" placeholder="Search jobs..."
                         class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm outline-none transition placeholder:text-slate-400 focus:border-brand-600 focus:ring-2 focus:ring-brand-100 sm:w-44">
 
-                    <!-- Back to Home Button -->
                     <a href="home.html"
                         class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-brand-900 transition hover:border-brand-600 hover:bg-brand-50">
                         <span aria-hidden="true">←</span>
                         Back to Home
                     </a>
 
-                    <!-- My Profile Button -->
                     <a href="#profile" class="btn-primary whitespace-nowrap">
                         My Profile
                     </a>
 
                 </div>
             </header>
-
 
             <!-- Mobile Navigation -->
             <details class="relative mb-8 lg:hidden">
@@ -145,7 +151,6 @@
                 </nav>
             </details>
 
-
             <!-- Dashboard Overview -->
             <section id="dashboard" class="mb-6">
                 <p class="mb-2 text-xs font-semibold uppercase tracking-widest text-brand-600">
@@ -161,7 +166,6 @@
                     interviews, and career opportunities in one place.
                 </p>
             </section>
-
 
             <!-- Statistics Cards -->
             <section aria-label="Job search statistics" class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
@@ -181,12 +185,12 @@
                     </div>
 
                     <div class="mt-5 flex items-center gap-2 border-t border-slate-100 pt-4">
-                        <span
-                            class="rounded-full bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700">+4</span>
+                        <span class="rounded-full bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700">
+                            +4
+                        </span>
                         <p class="text-xs text-slate-500">applications this week</p>
                     </div>
                 </article>
-
 
                 <!-- Applications Reviewed -->
                 <article class="card">
@@ -203,11 +207,12 @@
                     </div>
 
                     <div class="mt-5 flex items-center gap-2 border-t border-slate-100 pt-4">
-                        <span class="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">12</span>
+                        <span class="rounded-full bg-amber-50 px-2 py-1 text-xs font-semibold text-amber-700">
+                            12
+                        </span>
                         <p class="text-xs text-slate-500">awaiting a response</p>
                     </div>
                 </article>
-
 
                 <!-- Interviews -->
                 <article class="card">
@@ -224,11 +229,12 @@
                     </div>
 
                     <div class="mt-5 flex items-center gap-2 border-t border-slate-100 pt-4">
-                        <span class="rounded-full bg-sky-50 px-2 py-1 text-xs font-semibold text-sky-700">2</span>
+                        <span class="rounded-full bg-sky-50 px-2 py-1 text-xs font-semibold text-sky-700">
+                            2
+                        </span>
                         <p class="text-xs text-slate-500">scheduled this week</p>
                     </div>
                 </article>
-
 
                 <!-- Offers Received -->
                 <article class="card">
@@ -245,14 +251,14 @@
                     </div>
 
                     <div class="mt-5 flex items-center gap-2 border-t border-slate-100 pt-4">
-                        <span
-                            class="rounded-full bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700">Great!</span>
+                        <span class="rounded-full bg-emerald-50 px-2 py-1 text-xs font-semibold text-emerald-700">
+                            Great!
+                        </span>
                         <p class="text-xs text-slate-500">keep up the progress</p>
                     </div>
                 </article>
 
             </section>
-
 
             <!-- Recent Applications -->
             <section id="applications" class="card mt-8">
@@ -290,11 +296,14 @@
                                 <td class="px-4 py-4">Oct 8, 2026</td>
                                 <td class="px-4 py-4">
                                     <span
-                                        class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Pending</span>
+                                        class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">
+                                        Pending
+                                    </span>
                                 </td>
                                 <td class="px-4 py-4">
-                                    <a href="#profile"
-                                        class="font-semibold text-brand-600 hover:text-brand-700">View</a>
+                                    <a href="#profile" class="font-semibold text-brand-600 hover:text-brand-700">
+                                        View
+                                    </a>
                                 </td>
                             </tr>
 
@@ -304,11 +313,14 @@
                                 <td class="px-4 py-4">Oct 7, 2026</td>
                                 <td class="px-4 py-4">
                                     <span
-                                        class="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">Reviewed</span>
+                                        class="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">
+                                        Reviewed
+                                    </span>
                                 </td>
                                 <td class="px-4 py-4">
-                                    <a href="#profile"
-                                        class="font-semibold text-brand-600 hover:text-brand-700">View</a>
+                                    <a href="#profile" class="font-semibold text-brand-600 hover:text-brand-700">
+                                        View
+                                    </a>
                                 </td>
                             </tr>
 
@@ -318,11 +330,14 @@
                                 <td class="px-4 py-4">Oct 6, 2026</td>
                                 <td class="px-4 py-4">
                                     <span
-                                        class="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-800">Interview</span>
+                                        class="inline-flex rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-800">
+                                        Interview
+                                    </span>
                                 </td>
                                 <td class="px-4 py-4">
-                                    <a href="#profile"
-                                        class="font-semibold text-brand-600 hover:text-brand-700">View</a>
+                                    <a href="#profile" class="font-semibold text-brand-600 hover:text-brand-700">
+                                        View
+                                    </a>
                                 </td>
                             </tr>
 
@@ -332,11 +347,14 @@
                                 <td class="px-4 py-4">Oct 5, 2026</td>
                                 <td class="px-4 py-4">
                                     <span
-                                        class="inline-flex rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800">Rejected</span>
+                                        class="inline-flex rounded-full bg-rose-100 px-3 py-1 text-xs font-semibold text-rose-800">
+                                        Rejected
+                                    </span>
                                 </td>
                                 <td class="px-4 py-4">
-                                    <a href="#profile"
-                                        class="font-semibold text-brand-600 hover:text-brand-700">View</a>
+                                    <a href="#profile" class="font-semibold text-brand-600 hover:text-brand-700">
+                                        View
+                                    </a>
                                 </td>
                             </tr>
 
@@ -346,11 +364,14 @@
                                 <td class="px-4 py-4">Oct 4, 2026</td>
                                 <td class="px-4 py-4">
                                     <span
-                                        class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">Pending</span>
+                                        class="inline-flex rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">
+                                        Pending
+                                    </span>
                                 </td>
                                 <td class="px-4 py-4">
-                                    <a href="#profile"
-                                        class="font-semibold text-brand-600 hover:text-brand-700">View</a>
+                                    <a href="#profile" class="font-semibold text-brand-600 hover:text-brand-700">
+                                        View
+                                    </a>
                                 </td>
                             </tr>
 
@@ -360,11 +381,14 @@
                                 <td class="px-4 py-4">Oct 3, 2026</td>
                                 <td class="px-4 py-4">
                                     <span
-                                        class="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">Reviewed</span>
+                                        class="inline-flex rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-800">
+                                        Reviewed
+                                    </span>
                                 </td>
                                 <td class="px-4 py-4">
-                                    <a href="#profile"
-                                        class="font-semibold text-brand-600 hover:text-brand-700">View</a>
+                                    <a href="#profile" class="font-semibold text-brand-600 hover:text-brand-700">
+                                        View
+                                    </a>
                                 </td>
                             </tr>
                         </tbody>
@@ -375,7 +399,6 @@
                     Showing 6 sample applications.
                 </p>
             </section>
-
 
             <!-- Activity and Employers -->
             <section class="mt-8 grid grid-cols-1 gap-6 xl:grid-cols-2">
@@ -398,7 +421,9 @@
                     <ul class="space-y-5">
                         <li class="flex gap-4">
                             <span
-                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-700">✓</span>
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-emerald-100 text-sm font-bold text-emerald-700">
+                                ✓
+                            </span>
                             <div class="min-w-0 flex-1">
                                 <p class="text-sm font-semibold text-brand-900">Application reviewed</p>
                                 <p class="mt-1 text-sm text-slate-500">
@@ -410,7 +435,9 @@
 
                         <li class="flex gap-4">
                             <span
-                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sm font-bold text-sky-700">I</span>
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-sky-100 text-sm font-bold text-sky-700">
+                                I
+                            </span>
                             <div class="min-w-0 flex-1">
                                 <p class="text-sm font-semibold text-brand-900">Interview scheduled</p>
                                 <p class="mt-1 text-sm text-slate-500">
@@ -422,7 +449,9 @@
 
                         <li class="flex gap-4">
                             <span
-                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-bold text-amber-700">+</span>
+                                class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-amber-100 text-sm font-bold text-amber-700">
+                                +
+                            </span>
                             <div class="min-w-0 flex-1">
                                 <p class="text-sm font-semibold text-brand-900">New application submitted</p>
                                 <p class="mt-1 text-sm text-slate-500">
@@ -439,7 +468,6 @@
                     </a>
                 </article>
 
-
                 <!-- Featured Employers -->
                 <article id="employers" class="card">
                     <div class="mb-6">
@@ -453,7 +481,9 @@
                         <li
                             class="flex items-center gap-4 rounded-xl border border-slate-100 p-4 transition hover:border-brand-100 hover:bg-brand-50">
                             <span
-                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-100 font-bold text-brand-700">KM</span>
+                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-brand-100 font-bold text-brand-700">
+                                KM
+                            </span>
                             <div class="min-w-0 flex-1">
                                 <h3 class="font-semibold text-brand-900">Kigali Medical Center</h3>
                                 <p class="mt-1 text-sm text-slate-500">Hospital · Kigali</p>
@@ -464,7 +494,9 @@
                         <li
                             class="flex items-center gap-4 rounded-xl border border-slate-100 p-4 transition hover:border-brand-100 hover:bg-brand-50">
                             <span
-                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-100 font-bold text-sky-700">KF</span>
+                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-sky-100 font-bold text-sky-700">
+                                KF
+                            </span>
                             <div class="min-w-0 flex-1">
                                 <h3 class="font-semibold text-brand-900">King Faisal Hospital</h3>
                                 <p class="mt-1 text-sm text-slate-500">Hospital · Kigali</p>
@@ -475,7 +507,9 @@
                         <li
                             class="flex items-center gap-4 rounded-xl border border-slate-100 p-4 transition hover:border-brand-100 hover:bg-brand-50">
                             <span
-                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 font-bold text-amber-700">HP</span>
+                                class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-amber-100 font-bold text-amber-700">
+                                HP
+                            </span>
                             <div class="min-w-0 flex-1">
                                 <h3 class="font-semibold text-brand-900">HealthPlus Pharmacy</h3>
                                 <p class="mt-1 text-sm text-slate-500">Pharmacy · Kigali</p>
@@ -491,7 +525,6 @@
                 </article>
 
             </section>
-
 
             <!-- My Profile -->
             <section id="profile" class="card mt-8">
@@ -581,15 +614,12 @@
                 </form>
             </section>
 
-
             <!-- Dashboard Footer -->
             <footer class="mt-8 border-t border-slate-200 py-6">
                 <div class="flex flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
                     <p class="text-sm text-slate-500">
                         © 2026 MediFind. Connecting healthcare talent with opportunity.
                     </p>
-
-
                 </div>
             </footer>
 
